@@ -1,4 +1,4 @@
-# Crear LocalHost Blockchain Con JavaScrip 
+# Crear LocalHost Blockchain Con JavaScript
 
 En ese proyecto es un ejempolo de como podemos crear una base de datos de blockchain con JavaScript.
 
