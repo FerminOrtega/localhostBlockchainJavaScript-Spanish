@@ -35,19 +35,26 @@ Conceptos de las funcionalidades que tenemos que tener en cuenta a la hora de ha
 ###### Pasos para el manego de BlockChain:
 
 **Inicio**
+
 `npm install`
+
 `HTTP_PORT=3001 P2P_PORT=6001 npm start //Iniciamos el servidor` 
+
 `HTTP_PORT=3002 P2P_PORT=6002 PEERS=ws://localhost:6001 npm start //iniciamos el primer peer` 
 
 **Obtener el BlockChain**
+
 `curl http://localhost:3001/blocks` 
 
 **Crear un bloque**
+
 `curl -H "Content-type:application/json" --data '{"data" : "Some data to the first block"}' http://localhost:3001/mineBlock` 
 
 **Añadir un peer**
+
 `curl -H "Content-type:application/json" --data '{"peer" : "ws://localhost:6001"}' http://localhost:3001/addPeer` 
 
 **Query de peers conectados**
+
 `curl http://localhost:3001/peers` 
 
